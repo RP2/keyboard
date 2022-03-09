@@ -1,16 +1,20 @@
 
 # Keyboards - Digital Riley
 
-**GitHub repository for my custom keyboard website**
-> A resource for fellow enthusiasts and newcomers
-> Offer services and assistance to those looking for their next build
-> Flex my collection and work
+#### GitHub repository for my custom keyboard website
+> - A resource for fellow enthusiasts and newcomers
+> - Offer services and assistance to those looking for their next build
+> - Share my collection and work
 
-- [] Design a website
-- [] Build said website
-- [] Take initial photos
-- [] Manage hosting
-- [] Share
+#### Objectives :
+
+1. Design a website
+2. Build said website
+3. Take initial photos
+4. Manage hosting
+5. Share
+
+#### My Experience
 
 | Keyboards | Switches | Keycaps | Stabalizers |
 | ----------- | ----------- | ----------- | ----------- |
@@ -19,10 +23,7 @@
 | Tofu 75 | Holy Panda | GMK White on Black | Durock v2 |
 | Mode 65 | Kiwi | GMK Hennessey |  |
 | Bakeneko 60 | Boba U4T | GMK a |  |
-|  | MX Brown |  |  |
-|  | MX Black |  |  |
-|  | Gateron Brown |  |  |
+| Tofu 60 | Darling |  |  |
 |  | JWK Jwick |  |  |
 |  | Hyperglide Black |  |  |
 |  | Soju |  |  |
-|  | Darling |  |  |
