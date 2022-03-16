@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fafafa;
+  color: #050505;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+body a {
+  color: #050505;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+body a:active,
+body a:focus,
+body a:hover {
+  color: #c4bead;
+}
+
+body nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav a {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+body header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

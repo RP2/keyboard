@@ -6,7 +6,7 @@
 > - Offer services and assistance to those looking for their next build
 > - Share my collection and work
 
-#### Objectives :
+#### To-dos :
 
 1. Design a website
 2. Build said website
@@ -27,3 +27,4 @@
 |  | JWK Jwick |  |  |
 |  | Hyperglide Black |  |  |
 |  | Soju |  |  |
+|  | NK Cream |  |  |
