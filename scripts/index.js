@@ -54,3 +54,14 @@ $('a[href*="#"]')
         }
     }
 });
+
+//night mode at night
+let currentTime = new Date().getHours();
+if ($("body")) {
+    if (7 <= currentTime && currentTime < 20) {
+        $("body, nav, a").removeClass("night-time")
+    }
+    else {
+        $("body, nav, a").addClass("night-time")
+    }
+}
