@@ -8,20 +8,48 @@ body {
     min-height: 200vh;
 
     & a {
+        position: relative;
         color: #050505;
         transition: .25s;
         text-decoration: none;
+        padding-bottom: .25rem;
     }
 
-    & a:active,
-    a:focus,
-    a:hover {
-        color: #85d9d1;
-        scale: 1.25;
+    a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #050505;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    & a:active::before,
+    a:focus::before,
+    a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
     }
 
     h1 {
         font-size: 3rem;
+        font-weight: bold;
+    }
+
+    @mixin horizontal-line {
+        content: "";
+        bottom: 0;
+        left: 0;
+        margin: 0 1rem 0 1rem;
+        position: absolute;
+        width: calc(100vw - 2rem);
+        height: 1px;
+        background-color: #050505;
     }
 
     & nav {
@@ -29,23 +57,28 @@ body {
         position: fixed;
         display: flex;
         justify-content: flex-end;
-        background-color: white;
+        background-color: #fafafa;
 
         & a {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 1rem;
-            padding: 1rem;
         }
     }
 
+    & nav::after {
+        @include horizontal-line;
+    }
+
     & header {
-        min-height: 100vh;
+        padding-top: calc(1rem + 10vh);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        & h1 {
+            margin: 1rem;
+            text-align: center;
+        }
 
         & #header-image {
             z-index: -10;
@@ -54,8 +87,44 @@ body {
             object-fit: fill;
             overflow: hidden;
             border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             & img {
+                border-radius: 16px;
+                width: 100%;
+            }
+        }
+    }
+
+    & section {
+        margin: 1rem;
+
+        & h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        & .paragraph {
+            max-width: 75rem;
+            margin: 1rem;
+
+            & p {
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    & #about {
+        & #about-image {
+            max-width: 100rem;
+            max-height: 75vh;
+            overflow: hidden;
+            border-radius: 16px;
+
+            & img {
+                transition: .25s;
                 border-radius: 16px;
                 width: 100%;
             }
