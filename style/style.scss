@@ -36,11 +36,6 @@ body {
         transform: scaleX(1);
     }
 
-    h1 {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
     @mixin horizontal-line {
         content: "";
         bottom: 0;
@@ -53,6 +48,7 @@ body {
     }
 
     & nav {
+        z-index: 10;
         width: 100%;
         position: fixed;
         display: flex;
@@ -60,7 +56,7 @@ body {
         background-color: #fafafa;
 
         & a {
-            font-size: 2.5rem;
+            font-size: calc(2rem + 1vw);
             margin: 1rem;
         }
     }
@@ -76,6 +72,8 @@ body {
         align-items: center;
 
         & h1 {
+            font-size: calc(2rem + 2vw);
+            font-weight: bold;
             margin: 1rem;
             text-align: center;
         }
@@ -107,19 +105,22 @@ body {
         }
 
         & .paragraph {
-            max-width: 75rem;
+            max-width: 100rem;
             margin: 1rem;
 
             & p {
-                line-height: 1.5rem;
+                font-size: calc(1rem + .5vw);
+                line-height: calc(1.5rem + .5vw);
             }
         }
     }
 
     & #about {
+        padding-top: calc(1rem + 10vh);
+
         & #about-image {
-            max-width: 100rem;
-            max-height: 75vh;
+            max-width: 100vw;
+            max-height: 50vh;
             overflow: hidden;
             border-radius: 16px;
 
@@ -129,5 +130,24 @@ body {
                 width: 100%;
             }
         }
+    }
+
+    & #contact {
+        padding-top: calc(1rem + 10vh);
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px #050505;
+
+        & p {
+            font-size: 1.5rem;
+        }
+    }
+
+    & footer {
+        margin: 1rem;
+        display: flex;
+        justify-content: flex-end;
     }
 }

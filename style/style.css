@@ -44,12 +44,8 @@ body a:hover::before {
           transform: scaleX(1);
 }
 
-body h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 body nav {
+  z-index: 10;
   width: 100%;
   position: fixed;
   display: -webkit-box;
@@ -62,7 +58,7 @@ body nav {
 }
 
 body nav a {
-  font-size: 2.5rem;
+  font-size: calc(2rem + 1vw);
   margin: 1rem;
 }
 
@@ -92,6 +88,8 @@ body header {
 }
 
 body header h1 {
+  font-size: calc(2rem + 2vw);
+  font-weight: bold;
   margin: 1rem;
   text-align: center;
 }
@@ -130,17 +128,22 @@ body section h2 {
 }
 
 body section .paragraph {
-  max-width: 75rem;
+  max-width: 100rem;
   margin: 1rem;
 }
 
 body section .paragraph p {
-  line-height: 1.5rem;
+  font-size: calc(1rem + .5vw);
+  line-height: calc(1.5rem + .5vw);
+}
+
+body #about {
+  padding-top: calc(1rem + 10vh);
 }
 
 body #about #about-image {
-  max-width: 100rem;
-  max-height: 75vh;
+  max-width: 100vw;
+  max-height: 50vh;
   overflow: hidden;
   border-radius: 16px;
 }
@@ -150,5 +153,34 @@ body #about #about-image img {
   transition: .25s;
   border-radius: 16px;
   width: 100%;
+}
+
+body #contact {
+  padding-top: calc(1rem + 10vh);
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px #050505;
+}
+
+body #contact p {
+  font-size: 1.5rem;
+}
+
+body footer {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
