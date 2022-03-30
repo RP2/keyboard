@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import "./slide";
 
 .night-time {
     color: #fafafa;
@@ -18,20 +19,20 @@ body {
         transition: .25s;
         text-decoration: none;
         padding-bottom: .25rem;
+        cursor: pointer;
     }
 
     a::before {
         content: '';
         position: absolute;
         width: 100%;
-        height: 4px;
-        border-radius: 4px;
+        height: 1px;
         background-color: #050505;
         bottom: 0;
         left: 0;
         transform-origin: right;
         transform: scaleX(0);
-        transition: transform .3s ease-in-out;
+        transition: transform .25s ease-in-out;
     }
 
     & a:active::before,
@@ -77,6 +78,7 @@ body {
         align-items: center;
 
         & h1 {
+            z-index: -10;
             font-size: calc(2rem + 2vw);
             font-weight: bold;
             margin: 1rem;
@@ -85,7 +87,8 @@ body {
 
         & #header-image {
             z-index: -10;
-            width: 50vw;
+            margin: 1rem;
+            max-width: 100rem;
             max-height: 75vh;
             object-fit: fill;
             overflow: hidden;
@@ -115,13 +118,52 @@ body {
 
             & p {
                 font-size: calc(1rem + .5vw);
-                line-height: calc(1.5rem + .5vw);
+                line-height: calc(2rem + .5vw);
+            }
+        }
+
+        & .review {
+            margin: 2rem 0 2rem 0;
+
+            & .review-image {
+                max-width: 50rem;
+                max-height: 50rem;
+                overflow: hidden;
+                border-radius: 16px;
+                margin: 0 2rem 2rem 0;
+
+                & img {
+                    width: 100%;
+                    border-radius: 16px;
+                }
+            }
+
+            & .review-copy {
+                h3 {
+                    font-size: 1.25rem;
+                }
+
+                & ul {
+                    opacity: 0;
+                    width: fit-content;
+                    list-style-type: circle;
+
+                    & h3 {
+                        padding: 1rem 0 1rem 0;
+                        // border-bottom: solid 1px #050505;
+                    }
+
+                    & li {
+                        margin: .5rem 0 .5rem 1rem;
+                    }
+                }
             }
         }
     }
 
     & #about {
         padding-top: calc(1rem + 10vh);
+        overflow: hidden;
 
         & #about-image {
             max-width: 100vw;
@@ -135,23 +177,75 @@ body {
                 width: 100%;
             }
         }
+
+        & .paragraph {
+            opacity: 0;
+        }
+
+        & #tldr {
+            margin: 1rem 0 2rem 0;
+            max-width: 100vw;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 
     & #contact {
         padding-top: calc(1rem + 10vh);
         height: 50vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: solid 1px #050505;
 
-        & p {
-            font-size: 1.5rem;
+        & .paragraph {
+            padding: 2rem;
+            max-width: 100%;
+            border-right: solid 1px #050505;
+
+            & p {
+                font-size: 1.5rem;
+                padding: .5rem 0 .5rem 0;
+            }
         }
     }
 
+    & aside {
+        z-index: 10;
+        position: fixed;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 1rem 0;
+        border-left: solid 1px #050505;
+
+        & a {
+            width: fit-content;
+            margin: 1rem;
+        }
+    }
+
+    & #disclaimer {
+        margin: 5rem 0 1rem 1rem;
+        overflow: hidden;
+
+        & h2 {
+            opacity: 0;
+        }
+
+        & .paragraph {
+            opacity: 0;
+        }
+    }
+
+    & #keyboards {
+        padding-top: calc(1rem + 10vh);
+    }
+
     & footer {
+        border-top: solid 1px #050505;
         margin: 1rem;
+        padding-top: 1rem;
         display: flex;
         justify-content: flex-end;
     }
