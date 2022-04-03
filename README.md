@@ -5,14 +5,16 @@
 > - A resource for fellow enthusiasts and newcomers
 > - Offer services and assistance to those looking for their next build
 > - Share my collection and work
+> - Provide references based on personal experiences
 
 #### To-dos :
 
-1. Design a website
-2. Build said website
-3. Take initial photos
-4. Manage hosting
-5. Share
+1. ~~Design a website~~
+2. ~~Build said website~~
+3. ~~Take initial photos~~
+4. Form Submission
+5. Manage hosting
+6. Share
 
 #### My Experience
 
@@ -29,5 +31,6 @@
 |  | Soju |  |  |
 |  | NK Cream |  |  |
 |  | Black Cherry Pie |  |  |
+|  | DiviniKey ONI |  |  |
 
 Website & content [Copyright &copy; 2022](https://github.com/RP2)
