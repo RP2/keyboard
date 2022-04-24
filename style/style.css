@@ -290,9 +290,12 @@ body #about {
 }
 
 body #about #about-image {
+  z-index: -5;
   max-width: 100vw;
-  max-height: 50vh;
+  max-height: 75vh;
   overflow: hidden;
+  -o-object-fit: fill;
+     object-fit: fill;
   border-radius: 16px;
 }
 
